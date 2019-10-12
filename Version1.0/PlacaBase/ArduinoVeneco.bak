@@ -1,0 +1,159 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:L7805 U1
+U 1 1 5CA41170
+P 1600 2450
+F 0 "U1" V 1646 2554 50  0000 L CNN
+F 1 "L7805" V 1555 2554 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Vertical" H 1625 2300 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1600 2400 50  0001 C CNN
+	1    1600 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega328-PU U2
+U 1 1 5CA41266
+P 6250 4200
+F 0 "U2" H 5609 4246 50  0000 R CNN
+F 1 "ATmega328-PU" H 5609 4155 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 6250 4200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 6250 4200 50  0001 C CNN
+	1    6250 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5CA41389
+P 2650 3250
+F 0 "Y1" H 2650 3518 50  0000 C CNN
+F 1 "Crystal" H 2650 3427 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 2650 3250 50  0001 C CNN
+F 3 "~" H 2650 3250 50  0001 C CNN
+	1    2650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C2
+U 1 1 5CA41705
+P 3100 2150
+F 0 "C2" H 3278 2196 50  0000 L CNN
+F 1 "CAP" H 3278 2105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 3100 2150 50  0001 C CNN
+F 3 "~" H 3100 2150 50  0001 C CNN
+	1    3100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5CA4179D
+P 3100 3250
+F 0 "C3" V 2848 3250 50  0000 C CNN
+F 1 "C" V 2939 3250 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3138 3100 50  0001 C CNN
+F 3 "~" H 3100 3250 50  0001 C CNN
+	1    3100 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5CA41876
+P 2200 3250
+F 0 "C1" V 1948 3250 50  0000 C CNN
+F 1 "C" V 2039 3250 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 2238 3100 50  0001 C CNN
+F 3 "~" H 2200 3250 50  0001 C CNN
+	1    2200 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CA41BDB
+P 4500 2400
+F 0 "R2" V 4293 2400 50  0000 C CNN
+F 1 "R" V 4384 2400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4430 2400 50  0001 C CNN
+F 3 "~" H 4500 2400 50  0001 C CNN
+	1    4500 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CA41D58
+P 3300 4000
+F 0 "R1" V 3093 4000 50  0000 C CNN
+F 1 "R" V 3184 4000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3230 4000 50  0001 C CNN
+F 3 "~" H 3300 4000 50  0001 C CNN
+	1    3300 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5CA41E52
+P 2700 4000
+F 0 "D1" H 2691 4216 50  0000 C CNN
+F 1 "LED" H 2691 4125 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2700 4000 50  0001 C CNN
+F 3 "~" H 2700 4000 50  0001 C CNN
+	1    2700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5CA42BBE
+P 5900 2350
+F 0 "SW1" H 5900 2635 50  0000 C CNN
+F 1 "SW_Push" H 5900 2544 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5900 2550 50  0001 C CNN
+F 3 "" H 5900 2550 50  0001 C CNN
+	1    5900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x14_MountingPin J2
+U 1 1 5CA42F05
+P 7400 3200
+F 0 "J2" H 7487 3116 50  0000 L CNN
+F 1 "Conn_01x14_MountingPin" H 7487 3025 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 7400 3200 50  0001 C CNN
+F 3 "~" H 7400 3200 50  0001 C CNN
+	1    7400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x14_MountingPin J3
+U 1 1 5CA43035
+P 7600 4950
+F 0 "J3" H 7687 4866 50  0000 L CNN
+F 1 "Conn_01x14_MountingPin" H 7687 4775 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 7600 4950 50  0001 C CNN
+F 3 "~" H 7600 4950 50  0001 C CNN
+	1    7600 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5CA432EC
+P 5750 1550
+F 0 "J1" H 5830 1542 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 5830 1451 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 5750 1550 50  0001 C CNN
+F 3 "~" H 5750 1550 50  0001 C CNN
+	1    5750 1550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
