@@ -1,2 +1,2 @@
 # Chimosity
-About robotic car using Jhonny five.
+Sobre el auto robótico con Jhonny Five.
